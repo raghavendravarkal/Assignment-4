@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h2>Welcome to Student Info App</h2>
+    <p class="lead">Student Info Application provides the basic information of the students</p>
+    <p><a href="@Url.Action("Index","Student")" class="btn btn-primary btn-large">View Details &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h3>Functions</h3>
+        <p>
+            These systems vary in size, scope and capability, from packages that are implemented in relatively small 
+            organizations to cover student records alone, to enterprise-wide solutions that aim to cover most aspects 
+            of running large multi-campus organizations... 
+        </p>
+        <p><a class="btn btn-default" href="@Url.Action("Index","Student")">VIew Details &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h3>Analysis Accuracy</h3>
+        <p>In a study involving districts known for strong data use, 48% of teachers had difficulty posing questions prompted by data, 
+        36% did not comprehend given data, and 52% incorrectly interpreted data, 
+        some SISs present data to educators in an over-the-counter ... </p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Student")">VIew Details &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h3>Open Source SIS Systems</h3>
+        <p>There exist SIS systems that release their base code as open source. Do note that although all these systems are open source and can be downloaded for free, 
+        they may or may not allow you to use all the modules unless you pay...</p>
+        <p><a class="btn btn-default" href="@Url.Action("Index", "Student")">VIew Details &raquo;</a></p>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿@using StudentInfoMVCApp.Models;
+
+@model IEnumerable<StudentInfoMVCApp.Models.Student>
+
+@using StudentInfoMVCApp.Models;
+
+<div class="jumbotron">
+    <h2>Welcome to Student Info App</h2>
+    <p class="lead">Student Info Application provides the basic information of the students</p>
+    <p><a href="@Url.Action("Index","Student")" class="btn btn-primary btn-large">View Details &raquo;</a></p>
+</div>
+
+<div style="font-family:Arial">
+    @{
+        ViewBag.Title = "Students List";
+    }
+
+    <h3>Employee List</h3>
+    <ul>
+        @foreach (Student student in @Model)
+        {
+            <li>@Html.ActionLink(student.Name, "Details", new { id = student.StudentID })</li>
+        }
+    </ul>
+</div>

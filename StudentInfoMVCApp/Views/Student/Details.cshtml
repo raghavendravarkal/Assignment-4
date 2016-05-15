@@ -1,0 +1,49 @@
+﻿@model StudentInfoMVCApp.Models.Student
+
+@{
+    ViewBag.Title = "Student Details";
+}
+<div class="jumbotron">
+    <h2>Welcome to Student Info App</h2>
+    <p class="lead">Student Info Application provides the basic information of the students</p>
+    <p><a href="@Url.Action("Index","Student")" class="btn btn-primary btn-large">View Details &raquo;</a></p>
+</div>
+<div style="font-family:Arial">
+    <h3>Details</h3>
+    <table>
+        <tr>
+            <td>
+                Employee ID:
+            </td>
+            <td>
+                @Model.StudentID
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                @Model.Name
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Gender:
+            </td>
+            <td>
+                @Model.Gender
+            </td>
+        </tr>
+        <tr>
+            <td>
+                City:
+            </td>
+            <td>
+                @Model.City
+            </td>
+        </tr>
+    </table>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
